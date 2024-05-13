@@ -107,7 +107,7 @@ document.getElementById("power").addEventListener("click",toggleTimer);
 /*-------Marcar parada ---------*/
 
 const addMarkToList = (markIndex,markTime) =>{
-    marksList.innerHTML +=`<p>Finalizado ${markIndex}:${formatTime(markTime)}</p>`
+    marksList.innerHTML +=`<h3>Finalizado ${markIndex}</h3><p> ${formatTime(markTime)}</p>`
 }
 const markTime =()=>{
     marks.push(timer);
