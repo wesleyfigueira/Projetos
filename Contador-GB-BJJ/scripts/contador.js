@@ -1,7 +1,7 @@
 const value = document.getElementById("value");
 const plusButton = document.getElementById("plus");
 const minusButton = document.getElementById("minus");
-const resetButton = document.getElementById("reset");
+const resetButton = document.getElementById("reset1");
 
 let count =0;
 
