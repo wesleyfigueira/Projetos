@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button id="send">Start Game</button>
+    </form>
+    <div id="inicioJogo"></div>
+
+    <script>
+        const btninicio = document.querySelector("#send");
+
+
+        btninicio.addEventListener("click",function(e){
+        
+            e.preventDefault();
+            const name = document.querySelector("#name");
+            const value = name.value;
+            const firstMessage = document.getElementById("inicioJogo")
+        
+            firstMessage.innerHTML = `Hello ${value}, thank you for playing this little game!`
+        
+        
+        
+        });
+    </script>
+</body>
+</html>
