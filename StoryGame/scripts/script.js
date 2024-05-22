@@ -1,6 +1,8 @@
 
 const btninicio = document.querySelector("#send");
 
+
+
 btninicio.addEventListener("click", function(e) {
     e.preventDefault();
     
@@ -8,5 +10,13 @@ btninicio.addEventListener("click", function(e) {
     const value = name.value;
     const firstMessage = document.getElementById("inicioJogo");
     
-    firstMessage.innerHTML = `Hello ${value}, thank you for playing this little game!`;
+
+    if (value === "") {
+        alert("Digite um nome Valido!")
+    }else{
+        firstMessage.innerHTML = `Hello ${value}, thank you for playing this little game!`;
+        
+    }
+    
 });
+
